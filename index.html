@@ -5,23 +5,30 @@
         <meta http-equiv="Content-Type" content="text/html">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>To Do | Lista de Tareas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
         <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
         <link rel="stylesheet" href="src/styles.css">
     </head>
 
-    <body>
+    <body> 
+        <nav class="navbar ms-auto">
+                <button id="fecha"></button>
+                <h1 class="navbar-brand">bienvenidx ૮꒰ ˶• ༝ •˶꒱ა ♡</h1>
+                <button><i class="fa fa-lightbulb-o"></i></button>
+        </nav>
+        
+
         <div class="container">
             <div class="saludo">
-                <h1>bienvenidx ૮꒰ ˶• ༝ •˶꒱ა ♡</h1>
                 <h3>¡comenzá a organizar tus tareas!</h3>
             </div>
             <div class="agregar-tarea">
                 <fieldset>
                     <label for="agregar-tarea">
-                        <input type="text" id="agregar-tarea" placeholder="agrega una tarea">
+                        <input type="text" id="agregar-tarea" placeholder="agregá una tarea">
                         <i class="fa fa-plus"></i>                    
                     </label>
                 </fieldset>
@@ -34,11 +41,13 @@
         </div>
   
         <footer>
-                <a href="mailto:barbarapaezsueldo@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/barbara-paez-sueldo" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/barbarapaez" target="_blank"><i class="fa fa-github"></i></a>
-                <p class="firma">made with <span>♡</span> by bar</p>
+            <a href="mailto:barbarapaezsueldo@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/barbara-paez-sueldo" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/barbarapaez" target="_blank"><i class="fa fa-github"></i></a>
+            <p class="firma">made with <span>♡</span> by bar</p>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     </body>
 </html>

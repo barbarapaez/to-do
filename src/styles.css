@@ -10,19 +10,37 @@ body {
     color:#444444;
 }
 
+nav {
+    padding: 0px !important;
+    background-color: rgba(255, 255, 255, 0.308);
+    border-radius: 30px;
+}
+
+nav > button {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+nav > h1 {
+    margin: 2px;
+}
+
 .container {
     width: 440px;
     height: 540px;
     margin: auto;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
-.saludo {
+.saludo > h1{
     letter-spacing: 2px;
+    font-size: 30px;
 }
 
 .saludo > h3 {
     letter-spacing: 3.5px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .agregar-tarea {
@@ -46,9 +64,9 @@ input {
     letter-spacing: 1.5px;
     width: 90%;
     outline: none;
-    font-weight: bold;
     font-size: 14px;
     padding: 0 10px 0 10px;
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 label > i:hover {
@@ -58,6 +76,8 @@ label > i:hover {
 
 .seccion-tareas > h4 {
     letter-spacing: 2.5px;
+    margin-top: 18px;
+    font-size: 18px;
 }
 
 footer {
