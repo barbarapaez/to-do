@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 7px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
+    color:#444444;
+}
+
+.container {
+    width: 440px;
+    height: 540px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.saludo {
+    letter-spacing: 2px;
+}
+
+.saludo > h3 {
+    letter-spacing: 3.5px;
+}
+
+.agregar-tarea {
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 30px;
+}
+
+fieldset {
+    border-radius: 30px;
+    border-color: transparent;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    border-radius: 30px;
+    border-color: transparent;
+    letter-spacing: 1.5px;
+    width: 90%;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+}
+
+label > i:hover {
+    color: rgb(243, 142, 159);
+    transition: 0.2s;
+}
+
+.seccion-tareas > h4 {
+    letter-spacing: 2.5px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer > a {
+    text-decoration: none;
+}
+
+a > i {
+    color: #444444;
+}
