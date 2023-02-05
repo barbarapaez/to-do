@@ -68,7 +68,8 @@ nav .nav-container h1:hover > span {
 
 .container {
     width: 450px;
-    height: 540px;
+    min-height: 440px;
+    height: 80%;
     margin: auto;
     padding-top: 30px;
 }
@@ -77,6 +78,7 @@ nav .nav-container h1:hover > span {
     letter-spacing: 3.5px;
     font-size: 18px;
     font-weight: 400;
+    text-align: center;
 }
 
 .agregar-tarea {
