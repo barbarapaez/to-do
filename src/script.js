@@ -8,6 +8,8 @@ const uncheck ='fa-circle';
 const lineThrough = 'line-through';
 let id 
 let LIST
+let eliminada
+let realizada
 
 const FECHA = new Date()
 fecha.innerHTML = FECHA.toLocaleDateString('es-AR', {weekday: 'long', month: 'long',  day:'numeric'})
