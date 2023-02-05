@@ -91,7 +91,7 @@ nav .nav-container h1:hover > span {
 }
 
 .container {
-    width: 440px;
+    width: 450px;
     height: 540px;
     margin: auto;
     padding-top: 30px;
@@ -134,11 +134,58 @@ label > i:hover {
     transition: 0.2s;
 }
 
+.seccion-tareas {
+    width: 100%;
+    margin: 0;
+}
+
+.lista {
+    padding: 0;
+}
+
 .seccion-tareas > h4 {
     letter-spacing: 2.5px;
     margin-top: 18px;
     font-size: 18px;
 }
+
+.seccion-tareas > h4 {
+    margin-bottom: 0px;
+}
+
+.seccion-tareas li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 5px;
+    border-radius: 30px;
+}
+
+.seccion-tareas i {
+    width: 10%;
+    padding: 10px 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.seccion-tareas i:hover {
+    color: rgb(243, 142, 159);
+    transition: 0.4s;
+}
+
+.seccion-tareas p {
+    width: 70%;
+    padding: 5px 15px;
+    margin: 5px;
+    word-wrap: break-word;
+    border-radius: 30px;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
 
 footer {
     text-align: center;
