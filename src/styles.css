@@ -136,7 +136,9 @@ label > i:hover {
 
 .seccion-tareas {
     width: 100%;
-    margin: 0;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-radius: 30px;
 }
 
 .lista {
@@ -147,6 +149,7 @@ label > i:hover {
     letter-spacing: 2.5px;
     margin-top: 18px;
     font-size: 18px;
+    text-align: center;
 }
 
 .seccion-tareas > h4 {
@@ -159,6 +162,7 @@ label > i:hover {
     padding: 0;
     margin: 5px;
     border-radius: 30px;
+    background-color: white;
 }
 
 .seccion-tareas i {
@@ -167,10 +171,11 @@ label > i:hover {
     margin: auto;
     text-align: center;
     border-radius: 100%;
+    background-color: rgb(243, 142, 159);
 }
 
 .seccion-tareas i:hover {
-    color: rgb(243, 142, 159);
+    color: rgb(255, 255, 255);
     transition: 0.4s;
 }
 
@@ -180,10 +185,13 @@ label > i:hover {
     margin: 5px;
     word-wrap: break-word;
     border-radius: 30px;
+    background-color: rgb(255, 255, 196);
+    letter-spacing: 2px;
 }
 
 .line-through {
     text-decoration: line-through;
+    background-color: rgb(186, 233, 190) !important;
 }
 
 
