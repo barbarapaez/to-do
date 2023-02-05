@@ -40,30 +40,6 @@ nav {
     align-self: center;
 }
 
-@media only screen and (max-width:820px) {
-   
-    .fecha {
-        width: 20%;
-    }
-    
-    @keyframes move{
-        from {
-            margin: 150px;
-        }
-        to {
-            margin: -150px;
-        }
-    }
- 
-    #fecha {
-        animation-name: move;
-        animation-duration: 15s;
-        animation-timing-function: linear;
-        animation-iteration-count:infinite ;
-    }
-
-}
-
 #luz {
     width: 20%;
     display: flex;
@@ -205,4 +181,97 @@ footer > a {
 
 a > i {
     color: #444444;
+}
+
+@media only screen and (max-width:820px) {
+   
+    .fecha {
+        width: 20%;
+    }
+    
+    @keyframes move{
+        from {
+            margin: 150px;
+        }
+        to {
+            margin: -150px;
+        }
+    }
+ 
+    #fecha {
+        animation-name: move;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count:infinite ;
+    }
+
+}
+
+@media only screen and (max-device-width: 600px){
+
+    @keyframes blush {
+        from { 
+            text-shadow: rgba(243, 142, 159, 0.438) 2px 2px 5px;
+        }
+
+        to {
+            text-shadow: rgb(255, 125, 147) 2px 2px 5px;
+        }
+    }
+
+    nav .nav-container > h1 {
+        margin: 2px;
+        font-size: 0px;
+        align-self: center;
+    }
+
+    nav .nav-container h1 > span {
+        margin: 2px;
+        font-size: 25px;
+        align-self: center;
+        animation-name: blush;
+        animation-duration: 5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    #fecha {
+        font-size: 12px;
+    }
+
+    nav .nav-container i {
+        font-size: 13px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+        padding-top: 15px;
+        min-height: 500px;
+        height: 80%;
+        overflow:visible;
+        position: relative;
+    }
+
+    .container h3 {
+        font-size: 15px;
+    }
+
+    .seccion-tareas > h4 {
+        letter-spacing: 2px;
+        margin-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .seccion-tareas i {
+        width: 10%;
+        padding: 5px 5px;
+        margin: auto;
+        text-align: center;
+        border-radius: 100%;
+        background-color: rgb(243, 142, 159);
+        color: #444444 !important;
+    }
+
 }
