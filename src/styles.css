@@ -14,6 +14,7 @@ nav {
     padding: 0px !important;
     background-color: rgba(255, 255, 255, 0.308);
     border-radius: 30px;
+    cursor: default;
 }
 
 .nav-container {
@@ -30,6 +31,7 @@ nav {
     justify-content: start;
     white-space: nowrap;
     overflow: hidden;
+    cursor: default !important;
 }
 
 #fecha {
@@ -46,16 +48,16 @@ nav {
     
     @keyframes move{
         from {
-            margin: 250px;
+            margin: 150px;
         }
         to {
-            margin: -250px;
+            margin: -150px;
         }
     }
  
     #fecha {
         animation-name: move;
-        animation-duration: 20s;
+        animation-duration: 15s;
         animation-timing-function: linear;
         animation-iteration-count:infinite ;
     }
@@ -78,16 +80,21 @@ nav .nav-container > h1 {
     font-size: 20px;
 }
 
+nav .nav-container h1 > span {
+    border-radius: 100%;
+    padding: 0 5px 0 5px;
+}
+
+nav .nav-container h1:hover > span {
+    text-shadow: rgb(243, 142, 159) 2px 2px 5px;
+    transition-duration: 1s;
+}
+
 .container {
     width: 440px;
     height: 540px;
     margin: auto;
     padding-top: 30px;
-}
-
-.inicial > h1{
-    letter-spacing: 2px;
-    font-size: 30px;
 }
 
 .inicial > h3 {
