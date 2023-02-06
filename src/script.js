@@ -43,7 +43,7 @@ function mostrarTareas() {
     const btnTareaEliminada = tareaParticular.querySelector(".btn-tarea-eliminada"); 
     btnTareaEliminada.addEventListener("click", function() {
         const indexDeTarea = tareas.indexOf(tarea);
-        tarea.splice(indexDeTarea, 1); 
+        tareas.splice(indexDeTarea, 1); 
         mostrarTareas();
     })
     listaDeTareas.appendChild(tareaParticular);
