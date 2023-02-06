@@ -9,13 +9,17 @@ body {
     background-color: rgba(248, 196, 249, 0.66);
     background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
     color:#444444;
+    margin-top: 20px;
 }
 
 nav {
     background-color: rgba(255, 255, 255, 0.308);
     border-radius: 30px;
     cursor: default;
-    margin-top: 10px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    margin: auto;
+
 }
 
 .nav-container {
@@ -38,8 +42,12 @@ nav {
 
 #hora {
     margin: 0;
-    padding: 0;
+    padding: 6px;
     align-self: center;
+    background-color: rgb(255, 150, 167);
+    color: white;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 #luz {
@@ -47,6 +55,20 @@ nav {
     display: flex;
     justify-content: end;
     padding-right: 15px;
+    cursor: default;
+}
+
+.fa-lightbulb-o {
+    background-color:rgba(255, 255, 196, 0.644) !important;
+    padding: 8px;
+    border-radius: 30px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.fa-lightbulb-o:hover {
+    box-shadow: rgb(255, 255, 184) 2px 2px 20px;
 
 }
 
@@ -58,11 +80,17 @@ nav .nav-container > button {
 nav .nav-container > h1 {
     margin: 2px;
     font-size: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 nav .nav-container h1 > span {
     border-radius: 100%;
     padding: 0 5px 0 5px;
+}
+
+#saludo:hover {
+    text-shadow: rgb(255, 255, 184) 2px 2px 7px;
+    transition-duration: 1s;
 }
 
 nav .nav-container h1:hover > span {
@@ -75,7 +103,10 @@ nav .nav-container h1:hover > span {
     min-height: 480px;
     height: 80%;
     margin: auto;
-    padding-top: 20px;
+    margin-top: 25px;
+    padding: 10px;
+    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
 }
 
 .inicial > h3 {
@@ -89,6 +120,8 @@ nav .nav-container h1:hover > span {
     padding: 20px;
     margin-top: 0;
     color: white;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .seccion-tareas {
@@ -106,6 +139,8 @@ nav .nav-container h1:hover > span {
     padding: 15px;
     width: 100%;
     margin-bottom: 15px;
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 input {
@@ -148,6 +183,7 @@ input {
     border-radius: 30px;
     border-color: transparent;
     background-color: rgba(255, 255, 255, 0.63);
+    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .tarea-particular{
@@ -198,7 +234,29 @@ footer > a {
 
 a > i {
     color: #444444;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 15px;
 }
+
+a > i:hover {
+    transform: translateY(-5px);
+}
+
+.firma {
+    cursor: default;
+}
+
+.firma > span  {
+    transition: all 0.3s ease-in-out;
+    border-radius: 30px;
+}
+
+.firma:hover > span{
+    background-color: #ffc0cb9a;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 2px #ffc0cb; 
+}
+
 
 @media only screen and (max-device-width: 600px){
 
