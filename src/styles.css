@@ -68,7 +68,7 @@ nav .nav-container h1:hover > span {
 
 .container {
     width: 450px;
-    min-height: 440px;
+    min-height: 480px;
     height: 80%;
     margin: auto;
     padding-top: 30px;
@@ -76,10 +76,109 @@ nav .nav-container h1:hover > span {
 
 .inicial > h3 {
     letter-spacing: 3.5px;
-    font-size: 18px;
+    font-size: 16.5px;
     font-weight: 400;
     text-align: center;
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.63);
+    padding: 10px;
+    margin-top: 0;
 }
+
+.seccion-tareas {
+width: 100%;
+}
+
+/* SECCIÓN PARA AGREGAR TAREAS */
+.seccion-tareas > form {
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.63);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 30px;
+    border-color: transparent;
+    letter-spacing: 1.5px;
+    width: 85%;
+    outline: none;
+    font-size: 14px;
+    padding: 0 10px 0 10px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.formulario-tarea > .btn-agregar-tarea {
+    background-color: rgb(255, 150, 167);
+    border-radius: 30px;
+    padding: 4px 5px;
+    border-color: transparent;
+}
+
+#btn-agregar-tarea {
+    color: white;
+}
+
+.btn-agregar-tarea:hover #btn-agregar-tarea {
+    color: #444444;
+}
+
+
+#lista-de-tareas{
+    margin: 0;
+}
+
+.area-lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 30px;
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.tarea-particular{
+    padding-top: 2px;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+
+.btn-tarea-realizada, .btn-tarea-eliminada {
+    background-color: rgb(255, 150, 167);
+    border-radius: 30px;
+    padding: 1px 2px;
+    border-color: transparent;
+    color: white;
+    width: 10%;
+    max-height: 40px;
+}
+
+.btn-tarea-eliminada:hover {
+    color: #444444;
+}
+
+.texto-tarea {
+    width: 75%;
+    padding: 8px 15px; 
+    margin: 0px;
+    word-wrap: break-word;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 196);
+    letter-spacing: 2px;
+}
+
+#realizada {
+    background-color: rgb(226, 255, 226);
+    text-decoration: line-through;
+}
+
 
 /*
 .agregar-tarea {

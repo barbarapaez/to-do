@@ -29,10 +29,10 @@ function mostrarTareas() {
         }
     tareaParticular.innerHTML = 
     `
-        <span>${tarea.texto}</span>
-        <div>
-            <button class="btn-tarea-realizada">Listo</button>
-            <button class="btn-tarea-eliminada">Eliminar</button>
+        <div class="area-lista">
+            <button class="btn-tarea-realizada"><i class="fa fa-${tarea.realizada ? "check-circle" : "circle"}"></i></button>    
+            <span class="texto-tarea" id="${tarea.realizada ? "realizada" :""}">${tarea.texto}</span>
+            <button class="btn-tarea-eliminada"><i class="fa fa-trash"></i></button>
         </div>    
     `;
     const btnTareaRealizada = tareaParticular.querySelector(".btn-tarea-realizada");
@@ -52,3 +52,4 @@ function mostrarTareas() {
 }
 
 mostrarTareas();
+
