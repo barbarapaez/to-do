@@ -26,16 +26,17 @@ nav {
     align-items: center;
 }
 
-.fecha {
-    font-size: 14px;
+.hora {
+    font-size: 15px;
     padding-left: 15px;
+    letter-spacing: 2px;
     width: 20%;
     display: flex;
     justify-content: start;
     cursor: default !important;
 }
 
-#fecha {
+#hora {
     margin: 0;
     padding: 0;
     align-self: center;
@@ -244,7 +245,7 @@ a > i {
         animation-iteration-count: infinite;
     }
 
-    #fecha {
+    #hora {
         font-size: 13px;
     }
 

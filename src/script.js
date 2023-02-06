@@ -1,12 +1,21 @@
-const fecha = document.querySelector('#fecha');
+const hora = document.querySelector('#hora');
 const formularioTarea = document.querySelector('#formulario-tarea');
 const agregarTarea = document.querySelector('#agregar-tarea');
 const listaDeTareas = document.querySelector('#lista-de-tareas');
 
 let tareas = JSON.parse(localStorage.getItem("tareas")) || []; 
 
-const FECHA = new Date();
-fecha.innerHTML = FECHA.toLocaleDateString('es-AR', {weekday: 'long', month: 'long',  day:'numeric'})
+function darLaHora() {
+    let fechaActual = new Date();
+    let horaActual = fechaActual.getHours();
+    let minutoActual = fechaActual.getMinutes();
+    
+    horaActual = (horaActual < 10) ? "0" + horaActual : horaActual;
+    minutoActual = (minutoActual <10) ? "0" + minutoActual : minutoActual;
+    hora.textContent = `${horaActual}:${minutoActual}` 
+}
+
+setInterval(darLaHora, 1000)
 
 formularioTarea.addEventListener("submit", function(event) {
     event.preventDefault();
