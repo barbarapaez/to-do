@@ -32,7 +32,7 @@ nav {
 
 .hora {
     font-size: 15px;
-    padding-left: 15px;
+    padding-left: 10px;
     letter-spacing: 2px;
     width: 20%;
     display: flex;
@@ -48,6 +48,8 @@ nav {
     color: white;
     border-radius: 30px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+
 }
 
 #luz {
@@ -65,6 +67,8 @@ nav {
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+
 }
 
 .fa-lightbulb-o:hover {
@@ -260,47 +264,20 @@ a > i:hover {
 
 @media only screen and (max-device-width: 600px){
 
-    @keyframes blush {
-        from { 
-            text-shadow: rgba(243, 142, 159, 0.438) 2px 2px 5px;
-        }
-
-        to {
-            text-shadow: rgb(255, 125, 147) 2px 2px 5px;
-        }
-    }
-
-
     nav {
-        width: 100%;
+        max-width: 350px;
     }
     
     .nav-container {
-        margin: 2px;
-        padding: 7px;
-        border-radius: 30px;
-        cursor: default;
-        justify-self: center;
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        height: 60px;
     }
     
-    nav .nav-container > h1 {
-        margin: 2px;
-        font-size: 0px;
-        align-self: center;
+    nav .nav-container > h1, span {
+        font-size: 16px;
     }
 
-    nav .nav-container h1 > span {
-        margin: 2px;
-        font-size: 25px;
-        align-self: center;
-        animation-name: blush;
-        animation-duration: 5s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
+    .nav-container span {
+        text-shadow: rgb(255, 40, 75) 2px 2px 4px !important;
     }
 
     #hora {
@@ -308,45 +285,60 @@ a > i:hover {
     }
 
     #luz > i {
-        width: 20%;
         display: flex;
-        padding-right: 7px;
+        padding: 4px 7px;
         justify-content: end;
         align-self: center;
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .container {
-        width: 100%;
-        margin: 0;
+        width: 330px;
+        margin-top: 15px;
         padding-top: 15px;
-        min-height: 500px;
-        height: 80%;
-        overflow:visible;
-        position: relative;
+        min-height: 370px;
     }
 
     .container h3 {
-        font-size: 15px;
+        font-size: 13.5px;
         margin-bottom: 15px;
+        padding: 10px;
     }
 
-    .seccion-tareas > h4 {
-        letter-spacing: 2px;
-        font-size: 15px;
-        text-align: center;
+    .formulario-tarea {
+        padding: 12px 10px !important;
+    }
+
+    input {
+        width: 87%;
+    }
+
+    .formulario-tarea button {
+        font-size: 11px;
     }
 
     #btn-agregar-tarea {
         color: white !important;
-        padding: 2px 4px;
+    }
+
+    .area-lista {
+        padding: 10px;
+    }
+
+    .texto-tarea {
+        padding: 2px 10px;
     }
 
     .btn-tarea-realizada, .btn-tarea-eliminada {
-        padding: 2px 4px;
+        font-size: 12.5px;
+        padding: 0;
     }
 
     footer {
         margin-top: 25px;
+    }
+
+    .firma {
+        margin: 0;
     }
 }
