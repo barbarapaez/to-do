@@ -2,6 +2,8 @@ const hora = document.querySelector('#hora');
 const formularioTarea = document.querySelector('#formulario-tarea');
 const agregarTarea = document.querySelector('#agregar-tarea');
 const listaDeTareas = document.querySelector('#lista-de-tareas');
+const html = document.querySelector("html");
+const btnLuz = document.getElementById('luz');
 
 let tareas = JSON.parse(localStorage.getItem("tareas")) || []; 
 
@@ -62,3 +64,10 @@ function mostrarTareas() {
 
 mostrarTareas();
 
+btnLuz.addEventListener("click", function() {
+    if (html.getAttribute("data-theme") === "dia") {
+        html.setAttribute("data-theme", "noche"); 
+    } else {
+        html.setAttribute("data-theme", "dia");
+    }
+});

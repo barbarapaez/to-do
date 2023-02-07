@@ -1,3 +1,48 @@
+:root[data-theme="noche"] {
+    --texto-primario: rgb(247, 242, 242);
+    --texto-secundario: rgb(0, 0, 0);
+    --texto-tarea: rgb(0, 0, 0);
+    --sombra-texto: 1px 1px rgba(0, 0, 0, 0.1);
+    --sombra-cuerpo: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    --fondo: rgb(38, 37, 37);
+    --fondo-particular: linear-gradient(-20deg, #a15199 0%, #24d292 100%);
+    --gradiente-fondo: linear-gradient(176deg, rgb(38, 37, 37) 0%, rgb(55, 53, 60) 100%);;
+    --boton: rgba(165, 67, 155, 0.788) ;
+    --btn-luz: rgba(223, 223, 145, 0.836);
+    --efecto-luz: rgba(223, 223, 145, 0.836) 2px 2px 20px;
+    --mejillas: rgb(255, 40, 75);
+    --mejillas-efecto: rgb(255, 40, 75) 2px 2px 7px ;
+    --corazon: rgba(255, 176, 189, 0.459);
+    --efecto-corazon:  rgb(255, 176, 189) 0px 0px 7px ;
+    --tarea: rgba(223, 223, 145, 0.836);
+    --tarea-realizada: rgb(114, 182, 114);
+    --nav: rgb(55, 53, 60); 
+    --box-tareas: rgb(64, 63, 65);
+}
+
+:root[data-theme="dia"] {
+    --texto-primario: rgb(68, 68, 68);
+    --texto-secundario: rgb(255, 255, 255);
+    --texto-tarea: rgb(68, 68, 68);
+    --sombra-texto: 1px 1px rgba(0, 0, 0, 0.1);
+    --sombra-cuerpo: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    --fondo: rgba(248, 196, 249, 0.66);
+    --fondo-particular: linear-gradient(90deg, rgb(252, 115, 156) 0%, rgb(255, 170, 184) 97%);
+    --gradiente-fondo: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
+    --boton: rgb(255, 150, 167);
+    --btn-luz: rgb(255, 255, 184);
+    --efecto-luz: rgb(255, 255, 184) 2px 2px 20px;
+    --mejillas: rgb(255, 40, 75);
+    --mejillas-efecto: rgb(255, 40, 75) 2px 2px 7px ;
+    --corazon: rgba(255, 176, 189, 0.678);
+    --efecto-corazon:  rgba(255, 176, 189, 0.678) 0px 0px 7px ;
+    --tarea: rgb(255, 255, 196);
+    --tarea-realizada: rgb(226, 255, 226);
+    --nav: rgba(255, 255, 255, 0.308); 
+    --box-tareas: rgba(255, 255, 255, 0.63);
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,17 +51,17 @@
 }
 
 body {
-    background-color: rgba(248, 196, 249, 0.66);
-    background: linear-gradient(110.5deg, rgba(248, 196, 249, 0.66) 22.8%, rgba(253, 122, 4, 0.15) 64.6%);
-    color:#444444;
+    background-color: var(--fondo);
+    background: var(--gradiente-fondo);
+    color: var(--texto-primario);
     margin-top: 20px;
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.308);
+    background-color: var(--nav);
     border-radius: 30px;
     cursor: default;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-cuerpo);
     width: 600px;
     margin: auto;
 
@@ -44,11 +89,11 @@ nav {
     margin: 0;
     padding: 6px;
     align-self: center;
-    background-color: rgb(255, 150, 167);
-    color: white;
+    background: var(--fondo-particular);
+    color: var(--texto-secundario);
     border-radius: 30px;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-cuerpo);
+    text-shadow: var(--sombra-texto);
 
 }
 
@@ -61,19 +106,18 @@ nav {
 }
 
 .fa-lightbulb-o {
-    background-color:rgba(255, 255, 196, 0.644) !important;
+    background-color: var(--btn-luz) !important;
     padding: 8px;
     border-radius: 30px;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-cuerpo);
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    text-shadow: var(--sombra-texto);
 
 }
 
 .fa-lightbulb-o:hover {
-    box-shadow: rgb(255, 255, 184) 2px 2px 20px;
-
+    box-shadow: var(--efecto-luz);
 }
 
 nav .nav-container > button {
@@ -84,7 +128,7 @@ nav .nav-container > button {
 nav .nav-container > h1 {
     margin: 2px;
     font-size: 20px;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    text-shadow: var(--sombra-texto);
 }
 
 nav .nav-container h1 > span {
@@ -92,13 +136,8 @@ nav .nav-container h1 > span {
     padding: 0 5px 0 5px;
 }
 
-#saludo:hover {
-    text-shadow: rgb(255, 255, 184) 2px 2px 7px;
-    transition-duration: 1s;
-}
-
 nav .nav-container h1:hover > span {
-    text-shadow: rgb(255, 40, 75) 2px 2px 7px;
+    text-shadow: var(--mejillas-efecto);
     transition-duration: 1s;
 }
 
@@ -109,7 +148,6 @@ nav .nav-container h1:hover > span {
     margin: auto;
     margin-top: 25px;
     padding: 10px;
-    box-shadow: 1px 1px 20px 0px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
 }
 
@@ -120,12 +158,12 @@ nav .nav-container h1:hover > span {
     text-align: center;
     border-radius: 30px;
     border-color: transparent;
-    background-color: rgb(255, 150, 167);
+    background: var(--fondo-particular);
     padding: 20px;
     margin-top: 0;
-    color: white;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.1);
+    color: var(--texto-secundario);
+    box-shadow: var(--sombra-cuerpo);
+    text-shadow: var(--sombra-texto);
 }
 
 .seccion-tareas {
@@ -137,13 +175,13 @@ nav .nav-container h1:hover > span {
 .seccion-tareas > form {
     border-radius: 30px;
     border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: var(--box-tareas);
     display: flex;
     justify-content: space-between;
     padding: 15px;
     width: 100%;
     margin-bottom: 15px;
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--sombra-cuerpo);
 
 }
 
@@ -159,7 +197,7 @@ input {
 }
 
 .formulario-tarea > .btn-agregar-tarea {
-    background-color: rgb(255, 150, 167);
+    background: var(--boton);
     border-radius: 30px;
     padding: 4px 5px;
     border-color: transparent;
@@ -167,11 +205,11 @@ input {
 }
 
 #btn-agregar-tarea {
-    color: white;
+    color: var(--texto-secundario);
 }
 
 .btn-agregar-tarea:hover #btn-agregar-tarea {
-    color: #444444;
+    color: var(--texto-primario);
 }
 
 
@@ -186,8 +224,8 @@ input {
     padding: 15px;
     border-radius: 30px;
     border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.63);
-    box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
+    background-color: var(--box-tareas);
+    box-shadow: var(--sombra-cuerpo);
 }
 
 .tarea-particular{
@@ -198,17 +236,17 @@ input {
 }
 
 .btn-tarea-realizada, .btn-tarea-eliminada {
-    background-color: rgb(255, 150, 167);
+    background: var(--boton);
     border-radius: 30px;
     padding: 1px 2px;
     border-color: transparent;
-    color: white;
+    color: var(--texto-secundario);
     width: 7.5%;
     max-height: 40px;
 }
 
 .btn-tarea-eliminada:hover {
-    color: #444444;
+    color: var(--texto-primario);
 }
 
 .texto-tarea {
@@ -217,12 +255,13 @@ input {
     margin: 0px;
     word-wrap: break-word;
     border-radius: 30px;
-    background-color: rgb(255, 255, 196);
+    background-color: var(--tarea);
+    color: var(--texto-tarea);
     letter-spacing: 2px;
 }
 
 #realizada {
-    background-color: rgb(226, 255, 226);
+    background-color: var(--tarea-realizada);
     text-decoration: line-through;
 }
 
@@ -237,7 +276,7 @@ footer > a {
 }
 
 a > i {
-    color: #444444;
+    color: var(--texto-primario);
     transition: all 0.2s ease-in-out;
     margin-bottom: 15px;
 }
@@ -253,12 +292,13 @@ a > i:hover {
 .firma > span  {
     transition: all 0.3s ease-in-out;
     border-radius: 30px;
+    padding: 0px 5px;
 }
 
 .firma:hover > span{
-    background-color: #ffc0cb9a;
+    background-color: var(--corazon);
     border-radius: 30px;
-    box-shadow: 0px 0px 10px 2px #ffc0cb; 
+    box-shadow: var(--efecto-corazon); 
 }
 
 
@@ -297,6 +337,7 @@ a > i:hover {
         margin-top: 15px;
         padding-top: 15px;
         min-height: 370px;
+        box-shadow: none;
     }
 
     .container h3 {
